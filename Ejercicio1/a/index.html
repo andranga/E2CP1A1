@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="utf-8">
+ 	<title>Box Model</title>
+	<style>
+		html{
+			box-sizing: border-box;
+		}
+		*, *:before, *:after{
+			box-sizing: inherit;
+		}
+	 	.box{
+			height: 100px;
+	 		padding: 5px;
+			background-color: gray; 
+		}
+		.box25{
+			height: 100px;
+	 		padding: 5px;
+			background-color: gray; 
+			width: 25%;
+			border-style: solid; /*con margin no sirve border-box*/
+			border-color: white;
+			border-width: 5px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box25"></div>
+	<div class="box25"></div>
+	<div class="box25"></div>
+	<div class="box25"></div>
+</body>
+</html>
+
+  
