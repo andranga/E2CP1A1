@@ -4,18 +4,21 @@
 	<title></title>
 	<style type="text/css">
 		.imagen{
-			position: fixed;
-			left: 5px;
-			top: 8px;
+			position: relative;
+			
 		}.ribbon{
-			position: fixed;
-			left: 27px;
-			top: 43px;
+			position: absolute;
+			left: 22px;
+			top: 35px;
 		}
 	</style>
 </head>
 <body>
-	<img class="imagen"	src="oferta_lente.jpg">
-	<img class="ribbon" src="ribbon.png">
+	<div class="imagen">
+		<img src="oferta_lente.jpg">
+	    <div class="ribbon" >
+	    	<img src="ribbon.png">
+	    </div>
+	</div>
 </body>
 </html>

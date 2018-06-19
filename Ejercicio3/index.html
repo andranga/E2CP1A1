@@ -22,24 +22,24 @@
 			margin: 20px;
 			float: left;
 			background-color: yellow;
-			position: absolute;
+			position: relative;
 		}
 		.EspanaUP{
-			width: 40%;
-			height: 50px;
+			width: 100%;
+			height: 33%;
 			position: absolute;
 			background-color: red;
 			float: left;
-			margin: 20px;
+			margin: 0;
+			top: 0;
 		}
 		.EspanaDW{
-			width: 40%;
-			height: 50px;
+			width: 100%;
+			height: 33%;
 			position: absolute;
 			background-color: red;
 			float: left;
-			margin: 20px;
-			top: 150px;
+			bottom: 0px;
 		}
 		.Dinamarca{
 			width: 40%;
@@ -50,13 +50,11 @@
 			margin: 20px;
 			float: right;
 			background-color: red;
-			/*position: absolute;*/
-			
+			position: relative;
 		}
 		.DinamarcaH{
-			width: 40%;
+			width: 100%;
 			height: 22px;
-			margin: 20px;
 			float: right;
 			background-color: white;
 			position: absolute;
@@ -65,13 +63,12 @@
 		}
 		.DinamarcaV{
 			width: 22px;
-			height: 200px;
-			margin: 20px;
+			height: 100%;
 			float: right;
 			background-color: white;
 			position: absolute;
 			top: 0px;
-			right: 30%;
+			right: 70%;
 		}
 		.EmiratosA{
 			width: 40%;
@@ -82,36 +79,34 @@
 			margin: 20px;
 			background-color: red;
 			float: left;
+			position: relative;
 		}
 		.EmiratosAUP{
-			width: 30%;
-			height: 70px;
+			width: 70%;
+			height: 33%;
 			position: absolute;
 			background-color: green;
 			float: left;
-			margin: 20px;
-			top: 240px;
-			left: 10%;
+			top: 0px;
+			right: 0px;
 		}
 		.EmiratosAMD{
-			width: 30%;
-			height: 70px;
+			width: 70%;
+			height: 34%;
 			position: absolute;
 			background-color: white;
 			float: left;
-			margin: 20px;
-			top: 310px;
-			left: 10%;
+			top: 33%;
+			right: 0px;
 		}
 		.EmiratosADW{
-			width: 30%;
-			height: 70px;
+			width: 70%;
+			height: 33%;
 			position: absolute;
 			background-color: black;
 			float: left;
-			margin: 20px;
-			top: 370px;
-			left: 10%;
+			bottom: 0px;
+			right: 0px;
 		}
 		.Japon{
 			width: 40%;
@@ -122,41 +117,50 @@
 			margin: 20px;
 			float: right;
 			background-color: white;
+			position: relative;
 		}
 		.JaponC{
-			width: 10%;
-			height: 10%;
-			margin: 20px;
+			width: 100%;
+			height: 100%;
 			float: right;
 			position: absolute;
-			top: 290px;
-			right: 16%;
+			top: 0%;
+			right: 0%;
 			shape-outside: circle(1);
 		}
 		.clear{
 			clear: both;
 		}
+		p{
+			position: absolute;
+			bottom: -45px;
+		}
 	</style>
 </head>
 <body>
-	<div class="Espana">España</div>
+	<div class="Espana">
 	<div class="EspanaUP"></div>
 	<div class="EspanaDW"></div>
+	<p>España</p></div>
 	
-	<div class="Dinamarca"></div>
+	<div class="Dinamarca">
 	<div class="DinamarcaH"></div>
 	<div class="DinamarcaV"></div>
+	<p>Dinamarca</p></div>
 	<div class="clear"></div>
 
-	<div class="EmiratosA"></div>
+	<div class="EmiratosA">
 	<div class="EmiratosAUP"></div>
 	<div class="EmiratosAMD"></div>
 	<div class="EmiratosADW"></div>
+	<p>Emiratos Arabes</p></div>
 
-	<div class="Japon"></div>
-	<div class="JaponC"><svg height="100" width="100">
-  <circle cx="50" cy="50" r="40" fill="red" />
-</svg></div>
+	<div class="Japon">
+		<div class="JaponC"><svg height="100%" width="100%">
+  			<circle cx="49%" cy="48%" r="40" fill="red" /></svg>
+  		</div>
+  		<p>Japón</p>
+  	</div>
 	<div class="clear"></div>
 </body>
 </html>
